@@ -1,0 +1,35 @@
+body {
+  background: #000;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+.glavni {
+  margin: 0 auto;
+}
+.slogan {
+  font-size: 20px;
+  color: #ddd;
+  font-family: 'Roboto Slab', serif;
+}
+.uskoro {
+  color: #ddd;
+  font-family: 'Roboto Slab', serif;
+}
+.logo {
+  max-width: 80%;
+}
+@media (max-width:500px) {
+
+  .slogan {
+  }
+  .glavni {
+    margin-top: 10%;
+  }
+
+}
