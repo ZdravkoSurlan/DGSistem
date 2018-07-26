@@ -1,5 +1,5 @@
 body {
-  background: url(dirty-white.jpg);
+  background: url(abstract3.png);
 }
 #myVideo {
     position: fixed;
@@ -14,11 +14,11 @@ body {
 }
 .slogan {
   font-size: 20px;
-  color: #565451;
+  color: #ff2307;
   font-family: 'Roboto Slab', serif;
 }
 .uskoro {
-  color: #565451;
+  color: #e0d9d9;
   font-family: 'Roboto Slab', serif;
 }
 .logo {
