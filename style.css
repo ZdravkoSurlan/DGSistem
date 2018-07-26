@@ -1,32 +1,39 @@
 body {
-  background: #000;
+  background: url(dirty-white.jpg);
 }
 #myVideo {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    top: 0;
+    left: 0;
     min-width: 100%;
     min-height: 100%;
     margin: 0 auto;
 }
 .glavni {
-  margin: 0 auto;
+  margin: 5% auto 0 auto;
 }
 .slogan {
   font-size: 20px;
-  color: #ddd;
+  color: #565451;
   font-family: 'Roboto Slab', serif;
 }
 .uskoro {
-  color: #ddd;
+  color: #565451;
   font-family: 'Roboto Slab', serif;
 }
 .logo {
   max-width: 80%;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
 
+  #myVideo {
+    display: none;
+  }
   .slogan {
+    color: #565451;
+  }
+  .uskoro {
+    color: #565451;
   }
   .glavni {
     margin-top: 10%;
