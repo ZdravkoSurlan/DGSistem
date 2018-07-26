@@ -1,5 +1,6 @@
 body {
-  background: url(abstract3.png);
+  background: url(abstract3.png) no-repeat;
+  background-size: cover;
 }
 #myVideo {
     position: fixed;
