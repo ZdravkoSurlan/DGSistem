@@ -4,6 +4,7 @@ body {
   background: url(camera-cctv.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: right center;
 }
 .forma {
  font-family: 'Roboto Slab', serif;
@@ -25,7 +26,7 @@ body {
     margin: 0 auto;
 }
 .glavni {
-  margin: 5% auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 .slogan {
   font-size: 20px;
@@ -33,7 +34,7 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 .logo {
-  max-width: 70%;
+  max-width: 60%;
 }
 /*SIDENAV */
 #mySidenav {
@@ -232,5 +233,8 @@ z-index: 100;
   }
   .animate .solution {
     font-size: 40px;
+  }
+  .glavni {
+    margin: 10% auto 0 auto;
   }
 }
