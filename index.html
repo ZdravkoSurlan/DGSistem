@@ -2,28 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>DG Sistem</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Slab:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script src="main.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <title>DG Sistem</title>
 </head>
 <body>
     <!--<video autoplay muted loop id="myVideo">
       <source src="DGS background.mp4" type="video/mp4">
     </video> -->
+    <!-- LOGIN MODAL TRIGGER -->
+   <button class="btn" id="envelope" data-toggle="modal" data-target="#contactModal"><i class="far fa-envelope"></i></button>
+
+   <!-- LOGIN MODAL -->
+   <div class="modal" id="contactModal">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title kontakt-naslov">Kontaktirajte nas</h5>
+           <button class="close" data-dismiss="modal">&times;</button>
+         </div>
+         <div class="modal-body">
+           <form role="form" method="post" class="forma col-sm-10 m-auto">
+             <div class="form-group">
+                   <input type="text" id="name" class="form-control form-control-sm" placeholder="Ime i Prezime">
+               </div>
+               <div class="form-group">
+                   <input type="email" id="email" class="form-control form-control-sm" placeholder="Unesite email">
+               </div>
+               <div class="form-group">
+                   <label for="message">Vasa poruka</label>
+                   <textarea id="message" rows="3" class="form-control"></textarea>
+               </div>
+             </form>
+         </div>
+         <div class="modal-footer">
+           <button class="btn kontakt-submit" type="submit">Posalji</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+  <!--   <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <article class="comment">
+            <h2 class="mt-5 text-center kontakt-naslov"> Kontaktirajte nas</h2>
+                            <form role="form" method="post" class="forma col-sm-10 m-auto">
+                              <div class="form-group">
+                                    <input type="text" id="name" class="form-control form-control-sm" placeholder="Ime i Prezime">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control form-control-sm" placeholder="Unesite email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Vasa poruka</label>
+                                    <textarea id="message" rows="3" class="form-control"></textarea>
+                                </div>
+                                <button class="btn kontakt-submit" type="submit">Posalji</button>
+                            </form>
+        </article>
+      </nav> -->
     <div class="container">
       <div class="row">
           <div class="col-sm-6 glavni text-center">
             <img src="DGSistem-logo.png" alt="logo" class="logo">
-            <h1 class="slogan col-sm-12 text-center">YOUR SOLUTION FOR SECURITY AND COMMUNICATION</h1>
+            <div class="unbreakable-container">
+              <div class="unbreakable">
+                <span class="your">YOUR</span><span class="solution">SOLUTION</span><span class="for">FOR</span>
+              </div>
+              <div class="sc">SECURITY AND COMMUNICATION</div>
+            </div>
+            <!--<h1 class="slogan col-sm-12 text-center">YOUR SOLUTION FOR SECURITY AND COMMUNICATION</h1> -->
+            <div class="animate seven">
+        			<h2 class="blink mt-5">Uskoro!</h2>
+              </div>
           </div>
-          <h2 class="uskoro col-sm-12 text-center mt-5">Uskoro...</h2>
-      </div>
     </div>
+  </div>
+<script>
+    var hotbod = document.querySelector("body");
 
+    function doStuff() {
+      hotbod.className += " animate";
+    }
+
+    window.onload = function() {
+      doStuff();
+    };
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 </html>

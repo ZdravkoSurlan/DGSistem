@@ -1,6 +1,17 @@
 body {
-  background: url(abstract3.png) no-repeat;
+  background: url(camera-cctv.jpg) no-repeat;
   background-size: cover;
+}
+.forma {
+ font-family: 'Roboto Slab', serif;
+}
+.kontakt-naslov {
+  color: #ff4007;
+  font-family: 'Roboto Slab', serif;
+}
+.kontakt-submit {
+  background: #ff4007;
+  color: #fff;
 }
 #myVideo {
     position: fixed;
@@ -15,23 +26,197 @@ body {
 }
 .slogan {
   font-size: 20px;
-  color: #ff2307;
-  font-family: 'Roboto Slab', serif;
-}
-.uskoro {
-  color: #e0d9d9;
+  color: #ff4007;
   font-family: 'Roboto Slab', serif;
 }
 .logo {
-  max-width: 80%;
+  max-width: 70%;
 }
-@media (max-width: 500px) {
+/*SIDENAV */
+#mySidenav {
+	display: inline-block;
+}
+button#envelope {
+padding: 0;
+background: none;
+z-index: 100;
+}
+#envelope {
+	cursor: pointer;
+	display: inline-block;
+  position: fixed;
+  top: 5px;
+  right: 25px;
+	padding: 0;
+	font-size: 25px;
+	color: #ff4007;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#envelope:hover {
+	color: #bf2e03;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f3f3f3;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #565759;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #ff4007;
+    text-decoration: none;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@-webkit-keyframes blink {
+    10% {
+        opacity: 1.0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+.blink {
+     color: #ff4007;
+     font-size: 36px;
+     font-family: 'Roboto Slab', serif;
+    -webkit-animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3.5s;
+}
 
-  #myVideo {
-    display: none;
-  }
-  .glavni {
-    margin-top: 10%;
-  }
+.unbreakable
+{
+    font-family: 'Anton', sans-serif;
+    line-height: 1;
 
+    letter-spacing: -.07em;
+
+    color: #737477;
+}
+
+.sc
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    line-height: 1;
+
+    margin-top: 1px;
+
+    -webkit-transition: all .3s ease-in-out;
+            transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3s;
+    -webkit-transform: translateX(-1000%);
+        -ms-transform: translateX(-1000%);
+            transform: translateX(-1000%);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+
+    color: #ff4007;
+}
+
+.animate .sc
+{
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.unbreakable span
+{
+    font-family: 'Anton', Helvetica, sans-serif;
+    font-size: 40px;
+
+    text-transform: uppercase;
+
+    opacity: 0;
+    color: #737477;
+
+    filter: alpha(opacity=0);
+}
+
+.for
+{
+    -webkit-transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+            transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+    letter-spacing: -.01em;
+}
+
+.solution
+{
+    -webkit-transition: all .3s ease-in-out 2s;
+            transition: all .3s ease-in-out 2s;
+    letter-spacing: -.01em;
+}
+
+.your
+{
+    -webkit-transition: all .3s ease-in-out 1.7s;
+            transition: all .3s ease-in-out 1.7s;
+    letter-spacing: -.01em;
+}
+
+.animate .your
+{
+    font-size: 40px;
+
+    -webkit-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+            transform: scale(1.5,1.5);
+
+    opacity: 1;
+
+    filter: alpha(opacity=100);
+}
+
+.animate .solution
+{
+    font-size: 50px;
+
+    -webkit-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+            transform: scale(1.5,1.5);
+
+    opacity: 1;
+
+    filter: alpha(opacity=100);
+}
+
+.animate .for
+{
+    font-size: 40px;
+
+    -webkit-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+            transform: scale(1.5,1.5);
+
+    opacity: 1;
+
+    filter: alpha(opacity=100);
 }
