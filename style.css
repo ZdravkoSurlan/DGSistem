@@ -4,6 +4,10 @@ body {
   background: url(camera-cctv.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
   background-position: right center;
 }
 .forma {
